@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Game sale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="F:\year 2\Joe\e-commerce page\test website\style\w3.css">
+<style>
+.mySlides {display:none}
+.demo {cursor:pointer}
+</style>
+<body>
+
+<div class="w3-bar w3-border w3-light-grey w3-center">
+  <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">HOME</a>
+  <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">PC</a>
+  <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">XBOX</a>
+  <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">PLAYSTATION</a>
+  <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">NINTENDO</a>
+  <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">BASKET</a>
+</div>
+
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="F:\year 2\Joe\e-commerce page\test website\images\lastofus .jpg" style="width:100%">
+  <img class="mySlides" src="F:\year 2\Joe\e-commerce page\test website\images\nfs.jpg" style="width:100%">
+  <img class="mySlides" src="F:\year 2\Joe\e-commerce page\test website\images\The-Witcher-3-Wild-Hunt-HD-Wide-Wallpaper.jpg" style="width:100%">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="F:\year 2\Joe\e-commerce page\test website\images\lastofus .jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="F:\year 2\Joe\e-commerce page\test website\images\nfs.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="F:\year 2\Joe\e-commerce page\test website\images\The-Witcher-3-Wild-Hunt-HD-Wide-Wallpaper.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

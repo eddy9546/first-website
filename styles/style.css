@@ -1,0 +1,130 @@
+.index {
+    
+background-color: #333;
+
+    
+
+}
+.slideshow{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.navbar{
+    margin-left: auto;
+    width: 100%;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.gamebox {
+  background-color: #696969;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 65px;
+  margin-top: 40px;
+  border-radius: 25px;
+  box-shadow: 10px 10px black;
+  
+}
+
+.gamebox2 {
+  background-color: #696969;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 65px;
+  margin-top: 40px;
+  border-radius: 25px;
+  box-shadow: 10px 10px black;
+}
+.footer {
+ position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background:#999;
+   margin-top: 200px;
+   opacity: 0.5;
+   text-align: center;
+}
+.space{
+    width: 100px;
+    height: 500px;
+    color: red;
+}
+.gamebox:hover{
+    opacity: 0.5;
+}
+.gamebox2:hover{
+    opacity: 0.5;
+}
+.titleheader{
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    font-size: 45pt;
+    font-family: Nimbus Sans Novus;
+}
+.gamebox21 {
+  background-color: #696969;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 250px;
+  margin-top: 40px;
+  border-radius: 25px;
+  box-shadow: 10px 10px black;
+}
+.blankspace{
+    height: 200px;
+    width: 200px;
+    float: left;
+    color:#999;
+    text-align: center;
+    margin-left: 650px;
+    margin-top: 100px;
+
+}
+.xbox{
+   
+  background-image: url('../images/xboxw.jpg');
+  background-position: center;
+}
+
+.playstation{
+    background-image: url('../images/psback.jpg');
+    
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}

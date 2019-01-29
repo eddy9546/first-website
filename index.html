@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+        <head>
+           <link rel="stylesheet" href="styles\style.css">
+        </head>
+        <body>
+            <h2 class="w3-center">gamming websites</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="E:\year 2\Joe\e-commerce page\images\gtav wallpaper.jpg" style="width:50%">
+  <img class="mySlides" src="E:\year 2\Joe\e-commerce page\images\lastofus .jpg" style="width:50%">
+  <img class="mySlides" src="E:\year 2\Joe\e-commerce page\images\nfs.jpg" style="width:50%">
+  <img class="mySlides" src="E:\year 2\Joe\e-commerce page\images\The-Witcher-3-Wild-Hunt-HD-Wide-Wallpaper.jpg" style="width:50%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block"; 
+   setTimeout(carousel, 2000); // Change image every 2 seconds 
+}
+</script>
+        </body>
+</html>    
